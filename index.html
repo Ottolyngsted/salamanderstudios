@@ -187,26 +187,27 @@
   }
 
   .hero-copy,
-  .hero-panel,
-  .content-panel,
-  .info-card,
-  .feature-card,
-  .project-card,
-  .site-card,
-  .card-link {
-    background: transparent;
-    border: 0 solid rgba(247, 241, 232, 0.14);
-    border-radius: var(--radius);
-    box-shadow:
-      inset 0 1px 0 rgba(255,255,255,0.20),
-      inset 0 -1px 0 rgba(255,255,255,0.05),
-      var(--shadow);
-    backdrop-filter: blur(14px) saturate(1.06);
-    -webkit-backdrop-filter: blur(100px) saturate(1.06);
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-  }
+.hero-panel,
+.content-panel,
+.info-card,
+.feature-card,
+.project-card,
+.site-card,
+.card-link {
+  background: transparent;
+  border: 0 solid rgba(247, 241, 232, 0.14);
+  border-radius: var(--radius);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.20),
+    inset 0 -1px 0 rgba(255,255,255,0.05),
+    var(--shadow);
+  backdrop-filter: blur(14px) saturate(1.06);
+  -webkit-backdrop-filter: blur(100px) saturate(1.06);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  will-change: backdrop-filter;
+}
 
   .hero-copy::after,
   .hero-panel::before,
